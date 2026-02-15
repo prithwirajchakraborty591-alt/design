@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Near College</title>
+    <link rel="stylesheet" href="ss.php">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(to bottom, #001f3f, #083358);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Form Container */
+        .form-container {
+            max-width: 500px;
+            margin: -30px auto 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            color: #001f3f;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            font-size: 1rem;
+            background-color: #fff;
+        }
+
+        select {
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            width: 100%;
+            background-color: #001f3f;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to College Hostel</h1>
+        <p>Safe, Comfortable, and Convenient Accommodation Near Campus</p>
+    </div>
+
+    <div class="form-container">
+        <h2>Student Registration</h2>
+        
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label>Student Name:</label>
+                <input type="text" name="student_name" placeholder="Enter full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Student e-mail id:</label>
+                <input type="email" name="email_id" placeholder="Enter your e-mail id" required>
+            </div>
+
+            <div class="form-group">
+                <label>Enter your phone number:</label>
+                <input type="tel" name="phone" placeholder="1234567890" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <select name="gender" required>
+                    <option value="">--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
